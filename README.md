@@ -1,45 +1,19 @@
-# Ballet Pose Classification Using LSTM and MediaPipe
-This project presents an LSTM-based neural network for real-time classification of ballet poses, using MediaPipe for pose detection and a custom dataset of ballet movements. It was developed as part of my Bachelor's thesis research, combining technical interests with my background as a professional ballet dancer.
+# Ballet Pose Classification Using LSTM – Research Article
 
-# Ballet Movements Classified
-Demi-plié (first position)
-Battement tendu (to the side)
-Relevé (first position)
-Attitude croisé
-First arabesque
-Retiré devant
+This repository contains the research paper **"LSTM RNN for Ballet Sequences"**, written as part of my Master's studies in Computer Science.
 
-# Technologies Used
-Python
-TensorFlow / Keras
-MediaPipe Holistic
-NumPy
-Matplotlib / TensorBoard
+The paper explores the use of Long Short-Term Memory (LSTM) networks to classify ballet movements in real time using MediaPipe for pose detection. As a former professional ballet dancer, I merged technical skill and artistic discipline to create a tool that could assist dancers in training, accuracy, and creative development.
 
-# Model Architecture
-3 LSTM layers + 2 dense layers
-Softmax output over 6 classes
-Trained over 4800 labelled pose frames
-95:5 train-test split
-Optimiser: Adam
-Activation: ReLU, Softmax
+## Key Highlights
+- Real-time classification of 6 ballet poses
+- Pose data collected using MediaPipe Holistic
+- LSTM model trained with high accuracy (>80%)
+- Potential applications in dance training, choreography, and generative AI
 
-# Performance
-Trained for 2000 epochs
-Pose added to the sequence only if the prediction >80% confidence
-Real-time classification with high accuracy
+**Full paper**: [LSTM_RNN_for_ballet_sequences.pdf](./LSTM_RNN_for_ballet_sequences.pdf)
 
-# Folder Overview
-/src/: Core functions and model
-/data/: Pose data in .npy format
-/models/: Saved trained model
-/article/: Full PDF write-up of the project
-/media/: Pose figures and architecture diagrams
+---
 
-# Full Report
-You can find the full project article in /article/LSTM_RNN_for_ballet_sequences.pdf.
-
-# Future Work
-Integrate with a GAN to generate new ballet sequences
-Add support for full choreography recognition
-Use wearable sensors for higher precision
+## Future Work
+- Uploading code and dataset (currently in preparation)
+- Adding visual demos and training notebooks
